@@ -1,7 +1,7 @@
 
 public class Vehicle {
 
-	public int currentSpeed;
+	//public int currentSpeed;
 	
 	/*public String accelerate(){
 		return "The car is accelerating.";
