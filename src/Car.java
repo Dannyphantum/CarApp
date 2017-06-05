@@ -10,25 +10,37 @@ public class Car extends Vehicle {
 	}
 	
 	public String ignition(){
-		return "The " + this.carColor + this.carType + " is starting.";
+		return "The " + this.carColor + " " + this.carType + " is starting.";
 	}
 	
 	public String accelerate(){
-		return "The car is accelerating.";
+		return "The " + this.carColor + " " + this.carType + " is accelerating.";
 	}
 	
 	public String setSpeed(int currentSpeed){
-		return "The Speed is " + currentSpeed;
+		return "The " + this.carColor +" "+ this.carType + " is going " + currentSpeed + " mph.";
 	}
 	
 	public String stopped(){
-		return "The " + this.carColor + this.carType + " has stopped.";
+		return "The " + this.carColor +" "+ this.carType + " has stopped.";
 	}
 
+	public String emissionsCheck(){
+		return "The " + this.carColor +" "+ this.carType + " has stopped to have its emission test.";
+	}
+	
+	public String emissionPass(){
+		return "The " + this.carColor +" "+ this.carType +" "+ " passes it emissions test.";
+		}
+	
 	public String getCarColor() {
 		return carColor;
 	}
 
+	public String carPasses(){
+		return "The " +" "+ this.carColor +" "+ this.carType +" passes the " +" "+ this.carColor +" "+ this.carType;
+	}
+	
 	public void setCarColor(String carColor) {
 		this.carColor = carColor;
 	}

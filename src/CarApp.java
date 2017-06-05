@@ -2,15 +2,23 @@
 public class CarApp {
 	public static void main(String[] args){
 		
-		Car c = new Car("Red", "Porsche");
+		Car p = new Car("Red", "Porsche");
+		Car j = new Car("Blue", "Jetta");
 		
-		//c.setCarColor("red ");
+		//c.setCarColor("Red ");
 		//c.setCarType("Porsche");
 		
-		print(c.ignition() + "" + c.getCarColor());
-		print(c.accelerate());
-		print(c.setSpeed(90));
-		print(c.stopped());
+		print(p.ignition());
+		print(j.ignition());
+		print(p.accelerate());
+		print(j.accelerate());
+		print(j.emissionsCheck());
+		print(j.emissionPass());
+		print(p.setSpeed(50));
+		print(p.stopped());
+		//print(p.carPasses());
+		
+		
 		
 	
 		
